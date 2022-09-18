@@ -13,6 +13,10 @@ if"LuaS😎"then
 			end
 		end
 	end
+	
+	function table.unfreeze(Table)
+		setreadonly(Table, false)	
+	end
 
 	function table.randomize(Table)
 		for i, v in pairs(Table) do
